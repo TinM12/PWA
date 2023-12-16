@@ -7,7 +7,7 @@ recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
-document.getElementById('startRecording').onclick = () => {
+document.getElementById('startRecognition').onclick = () => {
     recognition.start();
     console.log('Recording started');
 };
