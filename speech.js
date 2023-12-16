@@ -25,6 +25,11 @@ document.getElementById('stopRecording').onclick = () => {
     }
 };
 
+recognition.onresult = (event) => {
+    const speechResult = event.results[0][0].transcript;
+    diagnostic.textContent = `You said: ${speechResult}`;
+};
+
 recognition.onerror = (event) => {
     console.error('Speech recognition error occurred: ', event.error);
 };
