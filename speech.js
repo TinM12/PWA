@@ -26,8 +26,14 @@ document.getElementById('stopRecording').onclick = () => {
 };
 
 recognition.onresult = (event) => {
-    const speechResult = event.results[0][0].transcript;
-    output.textContent = `You said: ${speechResult}`;
+    let fullTranscript = "";
+    
+    for (let i = 0; i < event.results.length; i++) {
+        const speechResult = event.results[i][0].transcript;
+        fullTranscript += speechResult + ' ';
+    }
+    
+    output.textContent = fullTranscript;
 };
 
 recognition.onerror = (event) => {
