@@ -4,6 +4,7 @@ const recognition = new SpeechRecognition();
 recognition.lang = 'en-US';
 recognition.maxAlternatives = 1;
 recognition.continuous = true;
+recognition.interimResults = true;
 
 const output = document.querySelector(".output");
 let isRecording = false;
