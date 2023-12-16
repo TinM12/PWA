@@ -8,16 +8,13 @@
     <title>OneGallery</title>
 </head>
 <body>
-    <h1>Speach to text converter. 
-        Use your microphone to say what you to be written!</h1>
+    <h1>Speech to text converter. 
+        Use your voice to say what you want to be written!</h1>
     <div class="logo-wrapper">
-        <img src="./assets/img/logo.png" alt="Cookbook logo" />
+        <img src="./assets/img/logo.jpg" alt="Logo" />
     </div>
-  
-    <script>
-        navigator.serviceWorker.register('./sw.js')
-          .then(reg => console.log('SW registered!', reg))
-          .catch(err => console.error('Error registering service worker', err));
-    </script>  
+    <div class="output"></div>
+    <button id="startRecognition">Start Recognition</button>
+    <script src="speech.js"></script>
 </body>
 </html>
