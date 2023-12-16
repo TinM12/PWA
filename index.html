@@ -8,21 +8,16 @@
     <title>OneGallery</title>
 </head>
 <body>
-    <div class="header">
-        <h3>OneGallery</h3>
-    </div>
+    <h1>Speach to text converter. 
+        Use your microphone to say what you to be written!</h1>
     <div class="logo-wrapper">
-        <img src="./assets/img/logo.jpg" alt="Logo" />
+        <img src="./assets/img/logo.png" alt="Cookbook logo" />
     </div>
+  
     <script>
         navigator.serviceWorker.register('./sw.js')
           .then(reg => console.log('SW registered!', reg))
           .catch(err => console.error('Error registering service worker', err));
-        setTimeout(() => {
-            const img = new Image();
-            img.src = './dog.svg';
-            document.body.appendChild(img);
-        }, 3000);
     </script>  
 </body>
 </html>
