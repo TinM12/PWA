@@ -32,8 +32,3 @@ recognition.onresult = (event) => {
 recognition.onerror = (event) => {
     console.error('Speech recognition error occurred: ', event.error);
 };
-  
-recognition.onend = () => {
-    console.log('Speech recognition ended');
-    isRecording = false; // Ensure the recording flag is updated on end
-};
