@@ -17,5 +17,10 @@
     <button id="startRecognition">Start Recognition</button>
     <button id="stopRecording">Stop Recording</button>
     <script src="speech.js"></script>
+    <script>
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('SW registered!', reg))
+          .catch(err => console.error('Error registering service worker', err));
+    </script>  
 </body>
 </html>
