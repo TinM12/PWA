@@ -26,7 +26,7 @@ document.getElementById('stopRecording').onclick = () => {
 };
 
 recognition.onresult = (event) => {
-    let fullTranscript = "";
+    let fullTranscript = "You said: ";
     
     for (let i = 0; i < event.results.length; i++) {
         const speechResult = event.results[i][0].transcript;

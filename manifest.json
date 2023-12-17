@@ -1,9 +1,9 @@
 {
-    "name": "OneGallery",
-    "short_name": "Gallery",
-    "description": "Aplikacija za online pohranu slika",
+    "name": "Speech recognizer",
+    "short_name": "Speech recognizer",
+    "description": "Application for speech recognition",
     "display": "fullscreen",
-    "theme_color": "blue",
+    "theme_color": "orange",
     "background_color": "#DDD",
     "start_url": "/index.html",
     "scope": ".",
